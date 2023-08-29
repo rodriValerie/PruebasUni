@@ -15,3 +15,5 @@ jobs:
           message: 'Se ha hecho un push en el repositorio.'
         env:
           SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+          run: | 
+            echo "La prueba es exitosa"
