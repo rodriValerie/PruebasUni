@@ -17,6 +17,7 @@ public class FactorialTest{
 
     @Test
     public void OperationNotNull(){
+
         assertNotNull(calculate);
     }
 
@@ -32,4 +33,9 @@ public class FactorialTest{
         assertEquals(120,result);
     }
 
+    @Test
+    public void TestFactoriale(){
+        int result = calculate.Factorial(7);
+        assertEquals(5040,result);
+    }
 }
