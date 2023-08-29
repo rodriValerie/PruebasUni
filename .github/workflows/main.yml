@@ -2,7 +2,7 @@ name: Alerta de push
 
 on:
   push:
-    branches: [ main ]
+    branches: main 
 
 jobs:
   alerta:
