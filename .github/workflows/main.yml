@@ -9,11 +9,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Enviar alerta
-        uses: rtCamp/action-slack-notify@v2.0.0
         with:
           status: 'success'
           message: 'Se ha hecho un push en el repositorio.'
         env:
-          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
           run: | 
             echo "La prueba es exitosa"
